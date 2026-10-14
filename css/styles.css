@@ -1,1 +1,22 @@
+h2
+{
+    color: black;
+    font-family:"Runic Ltd. Condensed", sans-serif;
+    font-size: 18px;
+    
 
+}
+
+.info-box
+{
+    background-color: navy;
+    padding: 5px;
+    border: 2px solid black;
+    width: 300px;
+}
+
+#csslogo
+{
+    margin:5px;
+    height:75px;
+}
