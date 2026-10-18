@@ -53,9 +53,37 @@
 
     <h2 style="text-align:center;">OTHER LINKS</h2>
     <p>
-        <a href = ""
+        <a href = "https://github.com/Austin0451">My GitHub</a>
+        <br>
+        <a href ="https://www.linkedin.com/in/austin-schoonover-a76689442/">My LinkedIn</a>
+        <br>
+        <a href = "https://www.westerntc.edu/">Western Tech(If you are interested)</a>
+        <br>
     </p>
        
+    <h2 style="text-align:center;">Everything Else</h2>
+    <button id = "Everything Else">Click here for a secret!</button>
+
+
+    <script src="js/script.js"></script>
+    <script>
+     const button = document.getElementById("Everything Else");
+
+    function handleButtonClick()
+    {
+
+    alert('Button was clicked from a seperate js file!');
+
+    }
+
+    button.addEventListener('click', function() {
+
+        window.location.assign("ResponseTest.html");
+
+
+    });
+        
+    </script>
         
 </body>
 </html>
