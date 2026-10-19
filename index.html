@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
     <title>Home Page</title>
 </head>
 <body>
     <div class = "container">
     <h1>Hello and welcome to my portfolio!</h1>
+
+    <button id="theme-toggle" class="theme-button">Switch Theme</button>
   
 
    
@@ -43,15 +46,22 @@
         <p><input type = "text" class = "center-input" placeholder="Type whatever you want." style = "text-align:center"></p>
 
         <body>
-            <button onclick = "location.href ='pages/HTML_Fundamentals.html'" class = "center-input" style="text-align:center"> HTML Fundamentals</button>
+            <button onclick = "location.href ='pages/HTML_Fundamentals.html'"> HTML Fundamentals</button>
         </body> 
         <body>
-            <button onclick = "location.href = 'CSS_Fundamentals.html'" class = "center-input" style="text-align:center">CSS Fundamentals</button>
+            <button onclick = "location.href = 'pages/CSS_Fundamentals.html'">CSS Fundamentals</button>
         </body>
         <body>
-            <button onclick = "location.href = 'Internet_and_Web_Fundamentals.html'" class = "center-input" style="text-align:center">Internet and Web Fundamentals</button>
+            <button onclick = "location.href = 'pages/Internet_and_Web_Fundamentals.html'">Internet and Web Fundamentals</button>
         </body>
     
+        <body>
+            <button onclick = "location.href = 'pages/Github_and_File_Manipulation.html'">Github and File Manipulation</button>
+        </body>
+        <body>
+            <button onclick = "location.href = 'pages/Computer_Anatomy.html'">Computer Anatomy</button>
+        </body>
+
 
     <h2 style="text-align:center;">OTHER LINKS</h2>
     <p>
@@ -59,33 +69,15 @@
         <br>
         <a href ="https://www.linkedin.com/in/austin-schoonover-a76689442/">My LinkedIn</a>
         <br>
-        <a href = "https://www.westerntc.edu/">Western Tech(If you are interested)</a>
+        <a href = "https://www.westerntc.edu/">Western Technical College</a>
         <br>
     </p>
        
-    <h2 style="text-align:center;">Everything Else</h2>
-    <button id = "Everything Else">Click here for a secret!</button>
+    
 
 
-    <script src="js/script.js"></script>
-    <script>
-     const button = document.getElementById("Everything Else");
-
-    function handleButtonClick()
-    {
-
-    alert('Button was clicked from a seperate js file!');
-
-    }
-
-    button.addEventListener('click', function() {
-
-        window.location.assign("ResponseTest.html");
-
-
-    });
-        
-    </script>
+    
+    
         
 </body>
 </html>

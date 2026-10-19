@@ -6,7 +6,6 @@ h1
     text-align:center;
 }
 
-
 h2
 {
     background-color: slategray;
@@ -25,7 +24,7 @@ h3
 
 body
 {
-    background-color: lightblue;
+    background-color:lightblue;
     padding: 100px;
     margin: 100px;
    
@@ -62,6 +61,23 @@ p
 
 }
 
+.theme-button
+{
+    background:darkcyan;
+    color:white;
+    border:none;
+    padding:8px 14px;
+    border-radius:20px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:.3s;
+
+}
+
+body.dark-mode{
+    background: rgb(169, 92, 93);
+    color:white;
+}
 
 
 header {

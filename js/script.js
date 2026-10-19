@@ -1,29 +1,28 @@
+document.addEventListener("DOMContentLoaded", function () {
 
+    // -----------------------------
+    // Dark Mode
+    // -----------------------------
 
+    const themeButton = document.getElementById("theme-toggle");
 
-
-function sayHello()
-{
-
-    const myName = "Austin";
-
-    let response = "Good";
-    let response1 = "Bad";
-    let response2 = "Okay";
-
-    console.log("Hello! My name is " + myName);
-    console.log("How are you doing today?");
-
-    if (response === "Good") {
-
-        console.log("Hey! Glad to see that you are doing well.");
-
-    } else if (response1 === "Bad") { 
-        console.log("I'm sorry to hear that. Hope your day gets better later.If not today, then tomorrow.");
-
-    } else if (response2 === "Okay") {
-        console.log("I see...It's somewhere around the middle. What would of made your day better?");
+    // Check if the visitor previously selected dark mode.
+    if (localStorage.getItem("theme") === "dark") {
+        document.body.classList.add("dark-mode");
+        themeButton.textContent = "Switch Theme";
     }
-    
 
-}
+    // Change the theme when the button is clicked.
+    themeButton.addEventListener("click", function () {
+        document.body.classList.toggle("dark-mode");
+
+        if (document.body.classList.contains("dark-mode")) {
+            localStorage.setItem("theme", "dark");
+            themeButton.textContent = "Switch Theme";
+        } else {
+            localStorage.setItem("theme", "light");
+            themeButton.textContent = "Switch Theme";
+        }
+    });
+
+});
